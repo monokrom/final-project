@@ -1,18 +1,161 @@
 <!doctype html>
-<html>
+<html class="no-js" lang="">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Monokrom</title>
+    <meta name="description" content="Monokrom is a graphic design studio based in Melbourne. Brand identity and design">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-<h1>Site</h1>
-<h2>to</h2>
-<h3>test</h3>
+    <!-- Add your site or application content here -->
 
 
+    <!--TO DO
+
+• build nav
+• make layout for Playground secion
+
+
+
+
+-->
+
+
+    <!--LANDING-->
+    <section id="initial">
+    
+    <!--HEADER-->
+    <header>
+        
+        <div class="logo"></div>
+        <!--NAV-->
+        <nav>
+            <ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Playground</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+   
+    
+    <div class="logo"></div>
+        <!--END-HEADER-->
+
+          </section>
+        
+    
+    <!--PORTFOLIO SECTION-->
+    <section id="portfolio">
+        <ul>
+            <li><img src="img/antmag1.jpg"></li>
+            <li><img src="img/kgm2.jpg"></li>
+            <li><img src="img/JYB-001-Identity-Display.jpg"></li>
+            <li><img src="img/krok1.jpg"></li>
+            <li><img src="img/jamierobertscd1.jpg"></li>
+            <li><img src="img/bmp1.jpg"></li>
+        </ul>
+    </section>
+
+
+    <!--PLAYGROUND SECTION-->
+    <section id="playground">
+        <div class="flex-container">
+            <div class="flex"><img src="img/1day.jpg"></div>
+            <div class="flex"><img src="img/follow1.jpg"></div>
+            <div class="flex"><img src="img/hello1.jpg"></div>
+            <div class="flex"><img src="img/futurepork.jpg"></div>
+            <div class="flex"><img src="img/20130101-223628.jpg"></div>
+            <div class="flex"><img src="img/Red-on-the-inside_5.png"></div>
+            <div class="flex"><img src="img/20130111-153849.jpg"></div>
+            <div class="flex"><img src="img/20130316-210026.jpg"></div>
+            <div class="flex"><img src="img/DSC_0940_sml.jpg"></div>
+        </div>
+    </section>
+
+    <!--    <section id="playground">
+        <ul class="flex-container">
+            <li class="flex"><img src="img/1day.jpg"></li>
+            <li class="flex"><img src="img/follow1.jpg"></li>
+            <li class="flex"><img src="img/hello1.jpg"></li>
+            <li class="flex"><img src="img/futurepork.jpg"></li>
+            <li class="flex"><img src="img/20130101-223628.jpg"></li>
+            <li class="flex"><img src="img/Red-on-the-inside_5.png"></li>
+            <li class="flex"><img src="img/20130111-153849.jpg" 2013</li>
+            <li class="flex"><img src="img/20130316-210026.jpg"></li>
+            <li class="flex"><img src="img/DSC_0940_sml.jpg"></li>
+        </ul>
+    </section>-->
+
+    <!--ABOUT SECTION-->
+    <section id="about">
+        <div class="left">
+        <h2>About</h2>
+        <p>Text descriotion etc.</p>
+
+        <h2>Contact</h2>
+        <form>
+            <fieldset>
+                <input>---Name
+                <input>---email
+                <input>---submit
+            </fieldset>
+
+        </form>
+            </div>
+        
+<div class="right">
+        <h2>Where else</h2>
+        <ul>
+            <li>Social One</li>
+            <li>Social Two</li>
+            <li>Social Three</li>
+        </ul>
+    </div>
+    </section>
+
+        
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
-
 
 </html>
