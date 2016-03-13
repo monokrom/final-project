@@ -1,7 +1,9 @@
 $(document).ready(function () {
     //NAV
-    $('header').mousedown(function () {
+    $('header').hover(function () {
+        $(this).toggleClass('expand');
         $('nav ul').toggleClass('open');
+        
     });
 
 });
