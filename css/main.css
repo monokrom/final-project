@@ -405,9 +405,9 @@ img {
 #playground {
     display: flex;
     color: #B4B0B1;
-    width: 100vw;
     margin: 0;
     height: auto;
+    width:100vw;
 }
 
 .flex-container {
@@ -417,6 +417,8 @@ img {
 }
 
 .flex {
+    width: 50%;
+    height: 50%;
     align-items: center;
     /* align vertical */
     overflow: visible;
@@ -456,6 +458,7 @@ img {
     overflow: auto;
     position: relative;
     width: 100vw;
+    height: 100vh;
 }
 
 
@@ -498,6 +501,7 @@ img {
     width: 100%;
     float: left;
     padding: 3% 5%;
+    color: white;
 }
 
 .where ul li {
@@ -708,12 +712,16 @@ input[type="submit"] {
        
 /* Desktop styles - screens at 480px and above */
    
+
     /*----------INITIAL & MENU Section-----------*/
 
+   
+    
     #initial {
          height: 100vh;   
 
     }
+
     /*----------PORTFOLIO Section-----------*/
 
     #portfolio {
@@ -723,28 +731,50 @@ input[type="submit"] {
     padding: 0;
     margin: 0;
     position: relative;
+    object-position: center;
     }
     
+    #portfolio > ul {
     margin: 0;
     list-style-type: none;
     white-space: nowrap;
     height: auto;
     
+    }
 
+    #portfolio li {
     display: inline-block;
+    }
 
+    #portfolio img {
     display: inline;
+    position: relative;
+    object-fit: contain;
+    }
 
     /*----------PLAYGROUND Section-----------*/
+.flex-container{
+    object-position: 50% 50%;
+    overflow: hidden;
+    }
+    
     .flex {
+    max-width: 33.333vw;
+    max-height: 33.333vh;
     align-items: center;
     /* align vertical */
 }
    
     .flex:last-child {
+    display: inline-block;
 }
     
     /*----------ABOUT Section-----------*/
+    #about {
+position:absolute;
+    }
+    
+#about .contact {
     width: 33.333%;
     color: white;
     height: 100%;
