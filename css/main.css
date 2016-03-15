@@ -1,3 +1,5 @@
+    @import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+
 $
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -124,16 +126,26 @@ textarea {
 
 /*----------GLOBAL & TYPOGRAPHY-----------*/
 
-h1 {
-    font-size: 2.5em;
+body {
+    font-family: 'Karla', 'helvetica', sans-serif;
+    font-size 16px;
 }
 
-h2 {}
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.5em;
+}
 
 h3 {}
 
 p {
     color: black;
+    font-weight: 400;
 }
 
  ul {
@@ -233,7 +245,7 @@ nav {
     width: 100%;
 }
 
-nav ul{
+ nav ul{
     overflow: hidden;
     width: 0;
     float: right;
@@ -243,8 +255,8 @@ nav ul{
     margin: 0;
     -webkit-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
+    }
 
-}
 nav ul.open{
     display: block;
     height: 220px;
@@ -331,6 +343,7 @@ img {
 /*----------PORTFOLIO Section-----------*/
 
 #portfolio {
+    position: relative;
     background-color: #888;
     width: 100vw;
     height: auto;
@@ -347,57 +360,104 @@ img {
 }
 
 #portfolio li {
+    position: relative;
     display: inline-block;
     width: 100%;
     height: 100%;
 }
 
-#portfolio img {
+#portfolio li img {
     width: 100%;
     height: 100%;
 }
 
+.title{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: white;
+    opacity: 0.6;
+    font-weight: 700;
+    font-size: 3rem;
+    z-index: 10;
+    margin:0;
+    }
+/*
+-webkit-animation: title 5s; /* Chrome, Safari, Opera
+    -webkit-animation-delay: 5s; /* Chrome, Safari, Opera 
+    animation: title 5s;
+    animation-delay: 5s;
+    animation-iteration-count:1; */
+
+
+/* Chrome, Safari, Opera */
+/*@-webkit-keyframes title {
+    0% {opacity:1}
+    100% {opacity:0}
+}
+
+@keyframes title {
+    0% {opacity:1}
+    100% {opacity:0}
+}*/
+
 .previous{
-    width:20%;
-    height:100%;
+    width: 20%;
+    height: 100%;
     padding: 5%;
-    position:absolute;
+    position: absolute;
     top:0;
     left: 0;
-    background-color: aqua;
-    opacity: 0;
+    font-size: 2em;
+    font-weight: 400;
+    opacity: 10;
     z-index: 100;
+    color: rgba(0,0,0,0.2);
 
 }
+
 .previous:hover{
-    opacity: 0.1;
-
+    color: rgba(255,255,255,0.4);
 }
+
 .previous-btn{
-    height:20%;
-    background-color: brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20%;
+    padding: 20px;
 }
 
 .next{
-    width:20%;
-    height:100%;
+    width: 20%;
+    height: 100%;
     padding: 5%;
-    position:absolute;
+    position: absolute;
     top:0;
     right:0;
-    background-color: aqua;
-    opacity: 0;
+    font-size: 2em;
+    font-weight: 400;
     z-index: 100; 
-    margin: auto 0;
+    margin: auto 0; 
+    color: rgba(0,0,0,0.2);
+
 
 }
 .next:hover{
-    opacity: 0.1;
+    color: rgba(255,255,255,0.4);
+
 }
 
 .next-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 20%;
-    background-color: brown;
+    padding: 20px;
+
+
 }
 
 /*----------PLAYGROUND Section-----------*/
@@ -414,6 +474,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     /* align horizontal */
+    z-index: 0;
 }
 
 .flex {
@@ -504,9 +565,33 @@ img {
     color: white;
 }
 
+.where a{
+    display: inline-block;
+    margin-right: 10px;
+}
 .where ul li {
     list-style-type: none;
 }
+
+.totop{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    font-size:0.5em;
+    font-weight: 700;
+    color: rgba(255,255,255,0.5);
+    transition: bottom 0.3s ease; 
+    z-index: 999;
+}
+
+a.totop {
+    text-decoration: none;
+}
+
+.totop:hover{
+    bottom: 5.5%;
+}
+
 
 #about
 legend {
@@ -526,7 +611,7 @@ input{
     color: black;
 }
 input[type="submit"] {
-    width: 30%;
+    width: 50%;
     color: #666;
 }
 
@@ -721,6 +806,21 @@ input[type="submit"] {
          height: 100vh;   
 
     }
+    
+    /* Should be here*/
+    nav ul{
+    overflow: hidden;
+    width: 0;
+    float: right;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0);
+    clear: both;
+    margin: 0;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    }
+    
+
 
     /*----------PORTFOLIO Section-----------*/
 
@@ -752,6 +852,10 @@ input[type="submit"] {
     object-fit: contain;
     }
 
+    .title{
+    font-size: 6rem;
+    }
+    
     /*----------PLAYGROUND Section-----------*/
 .flex-container{
     object-position: 50% 50%;
