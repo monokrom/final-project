@@ -156,7 +156,7 @@ p {
 section {
    /* background-color: #f7f7f7; */
     position: relative;
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -181,7 +181,7 @@ section {
 #initial {
   overflow: auto;
   position: relative;
-  width: 100vw;
+  width: 100%;
 
 }
 
@@ -230,8 +230,8 @@ header div.logo img{
 header { 
     position: fixed;
     width: 100%;
-    height:auto;
-    padding: 5%;
+    height: auto;
+    padding: 5% 5% 2% 5%;
     cursor: pointer;
     z-index: 9999;
 }
@@ -347,7 +347,7 @@ img {
 #portfolio {
     position: relative;
     background-color: #888;
-    width: 100vw;
+    width: 100%;
     height: auto;
     overflow:auto;
     padding: 0;
@@ -374,7 +374,7 @@ img {
 
 /*Slider */
 .slideContainer {
-  max-width: 100%;
+  width: 100%;
   background-color: none;
   margin: 0 auto;
   text-align: center;
@@ -508,7 +508,8 @@ img {
     color: #B4B0B1;
     margin: 0;
     height: auto;
-    width:100vw;
+    width:100%;
+    background-color: #9a9a9a;
 }
 
 .flex-container {
@@ -526,7 +527,7 @@ img {
     overflow: visible;
 }
 
-.flex:last-child {
+.flex:nth-child(9) {
     display: none;
 }
 
@@ -549,9 +550,34 @@ img {
     -webkit-transition: 0.7s -webkit-filter: ease;
     /* Chrome, Safari, Opera */
     transition: 0.7s ease;
-
 }
 
+
+.playModal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display:block;
+  width: 100vw;
+  height:auto;
+  background: pink;
+  z-index: 9999;
+}
+
+ .large {
+    display: block;
+    clear:both;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8); 
+    transition: none;
+}
 
 /*----------ABOUT Section-----------*/
 
@@ -559,8 +585,9 @@ img {
      /*background-color: #f7f7f7;*/
     overflow: auto;
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-color:
 }
 
 
@@ -844,7 +871,7 @@ input[type="submit"] {
    
     
     #initial {
-         height: 100vh;   
+         height: 100%;   
 
     }
     
@@ -867,8 +894,8 @@ input[type="submit"] {
 
     #portfolio {
     background-color: #888;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
     position: relative;
@@ -894,26 +921,50 @@ input[type="submit"] {
     } */
 
     .title{
-    font-size: 6rem;
+        font-size: 6rem;
+    }
+    
+    h3.title{
+        margin-top:10%;
+        font-size: 3rem;
     }
     
     /*----------PLAYGROUND Section-----------*/
-.flex-container{
+    #playground{
+        height: auto;
+        position: relative;
+    }
+    
+    .flex-container{
     object-position: 50% 50%;
     overflow: hidden;
     }
     
     .flex {
-    max-width: 33.333vw;
-    max-height: 33.333vh;
+    width: 33.333%;
+    height: 33.333%;
     align-items: center;
     /* align vertical */
 }
    
-    .flex:last-child {
+    .flex:nth-child(9) {
     display: inline-block;
 }
-    
+
+     .large {
+    display: block;
+    clear:both;
+    padding:50px;  
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}  
+   
     /*----------ABOUT Section-----------*/
     #about {
 position:absolute;
@@ -936,6 +987,7 @@ position:absolute;
 }
 
     
+ 
 }
     
     
