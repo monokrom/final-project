@@ -416,6 +416,11 @@ img {
     z-index: 10;
     margin:0;
     }
+ 
+h3.title{
+        margin-top:15%;
+        font-size: 1.5rem;
+    }
 /*
 -webkit-animation: title 5s; /* Chrome, Safari, Opera
     -webkit-animation-delay: 5s; /* Chrome, Safari, Opera 
