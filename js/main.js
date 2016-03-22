@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    //PORTFOLIO IMAGE SLIDER Second Attempt
+    // PORTFOLIO IMAGE SLIDER
 
     var pfImageNo = 0;
     var images = $('.slideContainer li');
@@ -13,22 +13,20 @@ $(document).ready(function () {
         });
         image.css('display', 'inline-block');
     }
-  
+
+
     // PORTFOLIO IMAGE SLIDER Previous & Next Nav
-    
+
     $('.next').click(function () {
-        //  clearInterval(autoSlide);
         pfImageNo += 1;
         if (pfImageNo > imageCount - 1) {
             pfImageNo = 0;
         }
-
         changeImage();
-
     });
 
+
     $('.previous').click(function () {
-        // clearInterval(autoSlide);
         pfImageNo -= 1;
         if (pfImageNo < 0) {
             pfImageNo = imageCount - 1;
@@ -37,34 +35,14 @@ $(document).ready(function () {
     });
 
 
-    
-    
+
+
     // PLAYGROUND IMAGE HIGHLIGHT
-/*
-    var plImages = $('#playground').find('img').map(function(){
-    return this.src;
-}).get();
-    alert(plImages);
-    
-  /*  $('div.flex img').click(function(){
-      $('div img').addClass();
-        $('.flex').hide();
-         $(this).add;
-    });
-        
-    
-*/
-     $('.flex').on('click', function (){
+
+    $('.flex').on('click', function () {
         $(this).toggleClass('large');
     });
-    /*
-     $('.flex').on('click', function (){
-        $(this).css('width', '100%'; );
-    }); */
-    /*
-$('.flex').click(function(){
-    $(this).toggleClass('large');
-});*/
+
 
     // SECTION TITLE FADEOUT    
     $('header a').click(function () {
@@ -73,7 +51,7 @@ $('.flex').click(function(){
 
 
 
-    //MOBILE NAV 
+    // MOBILE NAV 
 
 
     if ($(window).width() < 481) {
@@ -84,7 +62,7 @@ $('.flex').click(function(){
         });
     } else {
 
-        // DESKTOP NAV
+    // DESKTOP NAV
 
         $('header').hover(function () {
             $(this).toggleClass('expand');
@@ -93,25 +71,3 @@ $('.flex').click(function(){
     }
 
 });
-
-
-//gallery
-
-//check out carousels
-
-
-
-//IMAGE SLIDER First Attempt
-/*   $("div.previous").click(function () {
-       $("#portfolio img").animate({
-           "left": "+=100%"
-       });
-   });
-
-   $("div.next").click(function () {
-       $("#portfolio img").animate({
-           "left": '-=100%'
-       });
-   });
-   
-   */
